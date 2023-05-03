@@ -5,7 +5,7 @@ secret_key = "FtzQ/y1gcRv96XeYfxzQFWh6D/Qp7SJNz6OvPrdu"
 }
 
 resource "aws_s3_bucket" "dev" {
-bucket =  "saleem"
+bucket =  "akbar"
 tags     =      {
 Name      = "akbarbucket"
   }
