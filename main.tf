@@ -1,13 +1,14 @@
 provider "aws" {
-region = "ap-south-2"
-access_key = "AKIA4PBGWAA4KAAUEOER"
-secret_key = "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"
+region = "us-east-2"
+access_key = "AKIAQY3DUUSFILHLYKDA"
+secret_key = "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"
 }
 
-resource "aws_s3_bucket" "dev" {
-bucket =  "akbar"
-tags     =      {
-Name      = "akbarbucket"
+resource "aws_s3_bucket" "vcube" {
+  bucket = "akbarsaleem"
+
+  tags = {
+    Name        = "saleem"
+    Environment = "Dev"
   }
 }
-
